@@ -170,13 +170,6 @@ services:
      - pgsql-server
      - pgsql-database
 
- db_data_mysql:
-  image: busybox
-  volumes:
-   - all
-  volumes:
-   - ./zbx_env/var/lib/mysql:/var/lib/mysql:rw
-
  db_data_pgsql:
   image: busybox
   volumes:
